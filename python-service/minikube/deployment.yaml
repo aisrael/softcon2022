@@ -3,16 +3,16 @@ kind: Deployment
 metadata:
   name: python-service
   labels:
-    app: python-service
+    app.kubernetes.io/name: python-service
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: python-service
+      app.kubernetes.io/name: python-service
   template:
     metadata:
       labels:
-        app: python-service
+        app.kubernetes.io/name: python-service
     spec:
       containers:
         - name: python-service
