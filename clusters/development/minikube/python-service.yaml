@@ -1,0 +1,17 @@
+kind: Application
+apiVersion: argoproj.io/v1alpha1
+metadata:
+  name: python-service
+  namespace: argocd
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/aisrael/softcon2022.git
+    path: python-service/minikube
+    directory:
+      recurse: false
+  destination:
+    namespace: default
+    server: "https://kubernetes.default.svc"
+  syncPolicy:
+    automated: {}
