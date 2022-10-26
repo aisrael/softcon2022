@@ -21,4 +21,4 @@ spec:
           image: ghcr.io/aisrael/python-service:latest
           ports:
             - containerPort: 8000
-appVersion: 5bf4ea642147cbdc23cb18d22f80fc991ac418f0
+appVersion: 37d24516cde60cce7f4557dc6e2c5c1a16cc5e95
