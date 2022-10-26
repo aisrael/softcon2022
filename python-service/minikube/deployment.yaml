@@ -4,7 +4,7 @@ metadata:
   name: python-service
   labels:
     app.kubernetes.io/name: python-service
-    app.kubernetes.io/version: latest
+    app.kubernetes.io/version: 6132c088fe5f6ff3e3577f727db377f286e664be
 spec:
   replicas: 2
   selector:
@@ -14,11 +14,10 @@ spec:
     metadata:
       labels:
         app.kubernetes.io/name: python-service
-        app.kubernetes.io/version: latest
+        app.kubernetes.io/version: 6132c088fe5f6ff3e3577f727db377f286e664be
     spec:
       containers:
         - name: python-service
           image: ghcr.io/aisrael/python-service:latest
           ports:
             - containerPort: 8000
-appVersion: 37d24516cde60cce7f4557dc6e2c5c1a16cc5e95
